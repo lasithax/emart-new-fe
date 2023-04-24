@@ -3,12 +3,10 @@ import logo from "../../components/assets/images/Emart.png"
 import { Link } from "react-router-dom"
 
 const Search = ({ CartItem }) => {
-  // fixed Header
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
     search.classList.toggle("active", window.scrollY > 100)
   })
-
   return (
     <>
       <section className='search'>

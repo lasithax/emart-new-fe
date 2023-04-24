@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { NavLink } from 'react-router-dom';
 
 const SampleNextArrow = (props) => {
   const { onClick } = props
@@ -67,6 +68,9 @@ const FlashCard = ({ productItems, addToCart }) => {
                     <button onClick={() => addToCart(productItems)}>
                       <i className='fa fa-plus'></i>
                     </button>
+                  </div>
+                  <div key={productItems.id}>
+                    <NavLink to={`/products/${productItems.id}`} class="btn btn-outline-primary">Buy Now</NavLink>
                   </div>
                 </div>
               </div>
