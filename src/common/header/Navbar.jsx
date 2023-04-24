@@ -7,8 +7,13 @@ const Navbar = () => {
   return (
     <>
       <header className='header'>
+<<<<<<< HEAD
         <div className='containerd_flex'>
           <div className="navli">
+=======
+        <div className='container d_flex'>
+          <div className="navlink">
+>>>>>>> 52011ae56f49ef2bd7df82d205035d67042c5b55
             <ul className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
               <li>
                 <Link to='/'>Home</Link>

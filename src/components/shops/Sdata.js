@@ -64,5 +64,6 @@ const Sdata = {
       discount: "2",
     },
   ],
+
 }
 export default Sdata
